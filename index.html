@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>my blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="又菜又爱玩">
+<meta property="og:type" content="website">
+<meta property="og:title" content="my blog">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="my blog">
+<meta property="og:description" content="又菜又爱玩">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="wang tao">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="my blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">my blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">今天是个好日子</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-hexo创建流程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/05/30/hexo%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2024-05-30T06:24:06.000Z" itemprop="datePublished">2024-05-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/05/30/hexo%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/">hexo创建流程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="第一章-准备工作"><a href="#第一章-准备工作" class="headerlink" title="第一章 准备工作"></a>第一章 准备工作</h2><p>官网下载Node.js <a target="_blank" rel="noopener" href="http://www.nodejs.org/">www.nodejs.org</a> 附带安装npm管理器<br>node -v 查看node当前版本<br>npm -v 查看当前npm版本<br>安装淘宝镜像源:<br>npm install -g cnpm –registry&#x3D;<a target="_blank" rel="noopener" href="https://registry.npmmirror.com/">https://registry.npmmirror.com</a><br>安装hexo:<br>cnpm install -g hexo-cli<br>hexo -v 查看当前hexo版本</p>
+<h2 id="第二章-创建本地blog"><a href="#第二章-创建本地blog" class="headerlink" title="第二章 创建本地blog"></a>第二章 创建本地blog</h2><p>选择一个盘并创建blog文件夹:<br>F:<br>mkdir blog<br>进入blog文件夹:<br>cd blog&#x2F;<br>初始化一个blog:<br>hexo init<br>查询生成的文件目录:<br>dir<br>启动hexo:<br>hexo s<br>创建blog:<br>hexo n “hexo创建流程”<br>使用编辑器对source&#x2F;_posts文件夹的.md文件进行编辑即是编辑个人博客<br>清理当前进程<br>hexo clean:<br>重新生成blog:<br>hexo g<br>重新启动blog:<br>hexo s</p>
+<h2 id="第三章-网页端推送"><a href="#第三章-网页端推送" class="headerlink" title="第三章 网页端推送"></a>第三章 网页端推送</h2><p>在GitHub上创建仓库并以本人账号命名 例如 someone.github.io<br>在cmd或者git中安装git插件:<br>cnpm install –save hexo-deployer-git<br>将blog与GitHub链接<br>打开blog目录下的_config.yml文件 在deployment中进行修改:<br>type: git<br>repo: github仓库链接（https与ssh皆可）<br>branch: main<br>部署到远端:<br>hexo d</p>
+<h2 id="自定义界面"><a href="#自定义界面" class="headerlink" title="自定义界面"></a>自定义界面</h2><p>在blog目录下克隆想要的主题模式<br>git clone <a target="_blank" rel="noopener" href="https://github.com/xx/xxtheme.git">https://github.com/xx/xxtheme.git</a> themes&#x2F;xxtheme<br>在_config.yml中修改theme为导入的主题名称<br>hexo clean<br>hexo g<br>hexo d</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/05/30/hexo%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/" data-id="clwsvz5xu0000s0m4cvsj1cak" data-title="hexo创建流程" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/05/30/hexo%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/">hexo创建流程</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 wang tao<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
