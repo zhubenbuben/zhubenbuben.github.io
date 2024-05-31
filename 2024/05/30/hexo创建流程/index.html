@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>hexo创建流程 | my blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章 准备工作官网下载Node.js www.nodejs.org 附带安装npm管理器node -v 查看node当前版本npm -v 查看当前npm版本安装淘宝镜像源:npm install -g cnpm –registry&#x3D;https:&#x2F;&#x2F;registry.npmmirror.com安装hexo:cnpm install -g hexo-clihexo -v 查看当前hexo">
+  <meta name="description" content="hexo博客创建流程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo创建流程">
 <meta property="og:url" content="http://example.com/2024/05/30/hexo%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="my blog">
-<meta property="og:description" content="第一章 准备工作官网下载Node.js www.nodejs.org 附带安装npm管理器node -v 查看node当前版本npm -v 查看当前npm版本安装淘宝镜像源:npm install -g cnpm –registry&#x3D;https:&#x2F;&#x2F;registry.npmmirror.com安装hexo:cnpm install -g hexo-clihexo -v 查看当前hexo">
+<meta property="og:description" content="hexo博客创建流程">
 <meta property="og:locale">
 <meta property="article:published_time" content="2024-05-30T06:24:06.000Z">
-<meta property="article:modified_time" content="2024-05-30T14:44:57.585Z">
+<meta property="article:modified_time" content="2024-05-31T12:23:26.981Z">
 <meta property="article:author" content="wang tao">
 <meta name="twitter:card" content="summary">
   
@@ -59,12 +59,12 @@
 			
 				<li><a target="_blank" rel="noopener" href="https://zhubenbuben.github.io/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives/index.html">归档</a></li>
 	        
 			</ul>
 		</nav>
 		<nav>
-			总文章数 <nav%-site.post.length
+			总文章数 3
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -150,7 +150,7 @@
 				
 					<li style="width: 50%"><a target="_blank" rel="noopener" href="https://zhubenbuben.github.io/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,7 +186,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <span id="more"></span>
+        <h1 id="hexo博客创建流程"><a href="#hexo博客创建流程" class="headerlink" title="hexo博客创建流程"></a>hexo博客创建流程</h1><span id="more"></span>
 <h2 id="第一章-准备工作"><a href="#第一章-准备工作" class="headerlink" title="第一章 准备工作"></a>第一章 准备工作</h2><p>官网下载Node.js <a target="_blank" rel="noopener" href="http://www.nodejs.org/">www.nodejs.org</a> 附带安装npm管理器<br>node -v 查看node当前版本<br>npm -v 查看当前npm版本<br>安装淘宝镜像源:<br>npm install -g cnpm –registry&#x3D;<a target="_blank" rel="noopener" href="https://registry.npmmirror.com/">https://registry.npmmirror.com</a><br>安装hexo:<br>cnpm install -g hexo-cli<br>hexo -v 查看当前hexo版本</p>
 <h2 id="第二章-创建本地blog"><a href="#第二章-创建本地blog" class="headerlink" title="第二章 创建本地blog"></a>第二章 创建本地blog</h2><p>选择一个盘并创建blog文件夹:<br>F:<br>mkdir blog<br>进入blog文件夹:<br>cd blog&#x2F;<br>初始化一个blog:<br>hexo init<br>查询生成的文件目录:<br>dir<br>启动hexo:<br>hexo s<br>创建blog:<br>hexo n “hexo创建流程”<br>使用编辑器对source&#x2F;_posts文件夹的.md文件进行编辑即是编辑个人博客<br>清理当前进程<br>hexo clean:<br>重新生成blog:<br>hexo g<br>重新启动blog:<br>hexo s</p>
 <h2 id="第三章-网页端推送"><a href="#第三章-网页端推送" class="headerlink" title="第三章 网页端推送"></a>第三章 网页端推送</h2><p>在GitHub上创建仓库并以本人账号命名 例如 someone.github.io<br>在cmd或者git中安装git插件:<br>cnpm install –save hexo-deployer-git<br>将blog与GitHub链接<br>打开blog目录下的_config.yml文件 在deployment中进行修改:<br>type: git<br>repo: github仓库链接（https与ssh皆可）<br>branch: main<br>部署到远端:<br>hexo d</p>
@@ -314,6 +314,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E6%B5%81%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">hexo博客创建流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.1.</span> <span class="toc-text">第一章 准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0blog"><span class="toc-number">1.2.</span> <span class="toc-text">第二章 创建本地blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E7%BD%91%E9%A1%B5%E7%AB%AF%E6%8E%A8%E9%80%81"><span class="toc-number">1.3.</span> <span class="toc-text">第三章 网页端推送</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%95%8C%E9%9D%A2"><span class="toc-number">1.4.</span> <span class="toc-text">自定义界面</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
