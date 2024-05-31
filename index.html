@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="my blog">
 <meta property="og:description" content="又菜又爱玩">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale">
 <meta property="article:author" content="wang tao">
 <meta name="twitter:card" content="summary">
   
@@ -238,7 +238,364 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <span id="more"></span>
+
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p><code>#</code>后面跟标题，#的个数代表标题等级，如  </p>
+<blockquote>
+<p><code># 一级</code><br><code>## 二级</code><br><code>### 三级</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<h1 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h1><h2 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h2><h3 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h3><p><em><strong>html</strong></em>中用<code>&lt;h&gt;&lt;/h&gt;</code>表示标题，如<br><code>&lt;h1&gt;一级标题&lt;/h1&gt;</code><br><code>&lt;h2&gt;二级标题&lt;/h2&gt;</code><br><code>&lt;h3&gt;三级标题&lt;/h3&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<h1>一级标题</h1>
+<h2>二级标题</h2>
+<h3>三级标题</h3>
+</blockquote>
+<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><p>空白行分隔段落，如</p>
+<blockquote>
+<p>第一段</p>
+<p>第二段</p>
+<p>第三段</p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>第一段</p>
+<p>第二段</p>
+<p>第三段</p>
+</blockquote>
+<p>htmL中用<code>&lt;p&gt;&lt;/p&gt;</code>表示段落，如</p>
+<blockquote>
+<p><code>&lt;p&gt;第一段&lt;/p&gt;&lt;p&gt;第二段&lt;/p&gt;</code></p>
+</blockquote>
+<p>渲染效果如下：</p>
+<blockquote>
+<p>第一段</p><p>第二段</p>
+</blockquote>
+<h1 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h1><p>行尾添加两个以上空格<code>  </code>即可，如</p>
+<blockquote>
+<p>这后面有两个你看不见的空格表示换行<br>上一行后面有你看不见的两个空格</p>
+</blockquote>
+<p>html中用<code>&lt;br&gt;</code>表示换行，如</p>
+<blockquote>
+<p><code>&lt;p&gt;这是第一行&lt;br&gt;这是第二行&lt;/p&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这是第一行<br>这是第二行</p>
+</blockquote>
+<h1 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h1><p><strong>粗体</strong></p>
+<p>在需要加粗的文本前后添加两个星号<code>**a**</code>或两个下划线<code>__a__</code>，如</p>
+<blockquote>
+<p><code>这个**粗**加粗了</code><br><code>这个 __粗__ 也加粗了</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这个<strong>粗</strong>加粗了<br>这个 <strong>粗</strong> 也加粗了</p>
+</blockquote>
+<p>html中的加粗则是用<code>&lt;strong&gt;&lt;/strong&gt;</code>放在需要加粗的文本前后，如</p>
+<blockquote>
+<p><code>这个&lt;strong&gt;粗&lt;/strong&gt;加粗了</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这个<strong>粗</strong>加粗了</p>
+</blockquote>
+<p><em>斜体</em></p>
+<p>在需要斜体的文本前后添加一个星号<code>*a*</code>或两个下划线<code>_a_</code>，如</p>
+<blockquote>
+<p><code>这个*斜体*变斜了</code><br><code>这个 _斜体_ 也变斜了</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这个<em>斜体</em>变斜了<br>这个 <em>斜体</em> 也变斜了</p>
+</blockquote>
+<p>html中的斜体则是用<code>&lt;em&gt;&lt;/em&gt;</code>放在需要加粗的文本前后，如</p>
+<blockquote>
+<p><code>这个&lt;em&gt;斜体&lt;/em&gt;变斜了</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这个<em>斜体</em>变斜了</p>
+</blockquote>
+<p><em><strong>粗体和斜体</strong></em></p>
+<p>在需要加粗且斜体的文本前后各添加三个星号<code>***a***</code>或下划线<code>___a___</code>，如</p>
+<blockquote>
+<p><code>***这是一个加粗且倾斜的文本***</code><br><code>___这是一个加粗且倾斜的文本___</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p><em><strong>这是一个加粗且倾斜的文本</strong></em><br><em><strong>这是一个加粗且倾斜的文本</strong></em></p>
+</blockquote>
+<p>同样在html中加粗且斜体用<code>&lt;strong&gt;&lt;em&gt;&lt;/em&gt;&lt;/strong&gt;</code>表示，如</p>
+<blockquote>
+<p><code>&lt;strong&gt;&lt;em&gt;这是一个加粗且倾斜的文本&lt;/em&gt;&lt;/strong&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p><strong><em>这是一个加粗且倾斜的文本</em></strong></p>
+</blockquote>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>创建块引用就在段落前加一个<code>&gt;</code>符合，如：</p>
+<blockquote>
+<p><code>&gt;这是一个块引用</code></p>
+</blockquote>
+<p>渲染结果为：</p>
+<blockquote>
+<p>这是一个块引用</p>
+</blockquote>
+<p>多个段落的块引用就在段落之间的空白行添加一个<code>&gt;</code>符号</p>
+<blockquote>
+<p><code>&gt;这</code><br><code>&gt;</code><br><code>&gt;是</code><br><code>&gt;</code><br><code>&gt;多个</code><br><code>&gt;</code><br><code>&gt;块引用</code></p>
+</blockquote>
+<p>渲染结果为：</p>
+<blockquote>
+<blockquote>
+<p>这</p>
+<p>是</p>
+<p>多个</p>
+<p>块引用</p>
+</blockquote>
+</blockquote>
+<p>嵌套块引用（套娃式块引用）</p>
+<blockquote>
+<p><code>&gt;这是</code><br><code>&gt;</code><br><code>&gt;&gt;套娃式</code><br><code>&gt;</code><br><code>&gt;&gt;&gt;块引用</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<blockquote>
+<p>这是</p>
+<blockquote>
+<p>套娃式</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>块引用<br>带有其它元素的块引用（套中套）</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>本部分需要自己探索，如带有标题和列表的块引用</p>
+<blockquote>
+<p><code>&gt; ### 这是三级标题</code><br><code>&gt;</code><br><code>&gt; - 这是列表1</code><br><code>&gt; - 这是列表2</code><br><code>&gt;</code><br><code>&gt; ***这是加粗且倾斜***</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<blockquote>
+<h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><ul>
+<li>这是列表1</li>
+<li>这是列表2</li>
+</ul>
+<p><em><strong>这是加粗且倾斜</strong></em></p>
+</blockquote>
+</blockquote>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><p>有序列表</p>
+<p>在列表前用<code>1.</code>表示，第一个数字必须式1，后面的数字随意写也行，如</p>
+<blockquote>
+<p><code>1. 这是第一行</code><br><code>1. 这是第二行</code><br><code>1. 这是第三行</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ol>
+<li>这是第一行</li>
+<li>这是第二行</li>
+<li>这是第三行</li>
+</ol>
+</blockquote>
+<p>html中的列表用<code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code>表示，如</p>
+<blockquote>
+<p><code>&lt;ol&gt;&lt;li&gt;这是第一行&lt;/li&gt;&lt;li&gt;这是第二行&lt;/li&gt;&lt;/ol&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ol><li>这是第一行</li><li>这是第二行</li></ol>
+</blockquote>
+<p>无序列表</p>
+<p>要创建无序列表，请在每个列表项前面添加破折号 (<code>-</code>)、星号 (<code>*</code>) 或加号 (<code>+</code>) 。缩进一个或多个列表项可创建嵌套列表。</p>
+<blockquote>
+<p><code>- 这是一个</code><br><code>+ 花里胡哨的（错误的）</code><br><code>* 例子</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ul>
+<li>这是一个</li>
+</ul>
+<ul>
+<li>花里胡哨的（错误的）</li>
+</ul>
+<ul>
+<li>例子</li>
+</ul>
+</blockquote>
+<p>嵌套（套娃）式列表</p>
+<blockquote>
+<p><code>- 一级</code><br><code>- 一级</code><br><code>    + 二级</code><br><code>    * 二级</code><br><code>- 结束</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ul>
+<li>一级</li>
+<li>一级<ul>
+<li>二级</li>
+</ul>
+<ul>
+<li>二级</li>
+</ul>
+</li>
+<li>结束</li>
+</ul>
+</blockquote>
+<p>html中的无序列表用<code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>表示，如</p>
+<blockquote>
+<p><code>&lt;ul&gt;&lt;li&gt;列表1&lt;/li&gt;&lt;li&gt;列表2&lt;/li&gt;&lt;li&gt;列表3&lt;/li&gt;&lt;/ul&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ul><li>列表1</li><li>列表2</li><li>列表3</li></ul>
+</blockquote>
+<p>html中的嵌套式列表，使用多重<code>&lt;ul&gt;&lt;/ul&gt;</code>表示嵌套列表，但是必须嵌套在上一级<code>&lt;/li&gt;</code>之前，如</p>
+<blockquote>
+<p><code>&lt;ul&gt;&lt;li&gt;列表1&lt;/li&gt;&lt;li&gt;列表2&lt;/li&gt;&lt;li&gt;列表3&lt;ul&gt;&lt;li&gt;第一次套娃&lt;ul&gt;&lt;li&gt;第二次套娃&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<ul><li>列表1</li><li>列表2</li><li>列表3<ul><li>第一次套娃<ul><li>第二次套娃</li></ul></li></ul></li></ul>
+</blockquote>
+<p>列表中的嵌套&#x2F;嵌套中的列表</p>
+<blockquote>
+<p><code>+ 第一行</code><br><code>+ 第二行</code><br><code>&gt;</code><br><code>    &gt;一次嵌套</code><br><code>&gt;</code><br><code>&gt; 块嵌套</code><br><code>+ 第三行</code><br><code>&gt;</code><br><code>&gt;+ 嵌套中的列表1</code><br><code>&gt;</code><br><code>&gt;+ 嵌套中的列表2</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<blockquote>
+<ul>
+<li><p>第一行</p>
+</li>
+<li><p>第二行</p>
+<p>一次嵌套</p>
+</li>
+</ul>
+<p>块嵌套</p>
+<ul>
+<li><p>第三行</p>
+</li>
+<li><p>嵌套中的列表1</p>
+</li>
+<li><p>嵌套中的列表2</p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>代码块</p>
+<p>代码块通常采用四个空格或一个制表符缩进。当它们被放在列表中时，请将它们缩进八个空格或两个制表符</p>
+<ol>
+<li><p>Open the file.</p>
+</li>
+<li><p>Find the following code block on line 21:</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Test&lt;/title&gt;
+  &lt;/head&gt;
+</code></pre>
+</li>
+<li><p>Update the title to match the name of your website.</p>
+</li>
+</ol>
+<h1 id="代码语法"><a href="#代码语法" class="headerlink" title="代码语法"></a>代码语法</h1><p>要将单词或短语表示为代码，请将其包裹在反引号 (&#96;&#96;) 中</p>
+<p>这个<code>代码</code>像代码吗</p>
+<p>html中用<code>&lt;code&gt;&lt;/code&gt;</code>表示代码，如</p>
+<blockquote>
+<p><code>这个&lt;code&gt;代码&lt;/code&gt;像代码吗</code></p>
+</blockquote>
+<p>多重代码用双反引号</p>
+<p><code>你看这是几重`代码` </code></p>
+<p>代码块</p>
+<p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符，如</p>
+<blockquote>
+<blockquote>
+<p><code> 这是代码块吗</code><br><code> 是的</code></p>
+</blockquote>
+</blockquote>
+<h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线(<code>___</code>) ，并且不能包含其他内容</p>
+<blockquote>
+<p><code>***</code>  </p>
+<p><code>---</code></p>
+<p><code>___</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<hr>
+<hr>
+<hr>
+</blockquote>
+<h1 id="链接语法"><a href="#链接语法" class="headerlink" title="链接语法"></a>链接语法</h1><p>链接文本放在中括号内<code>[]</code>，链接地址放在后面的括号中<code>()</code>，链接title可选，即<code>[]()</code></p>
+<p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p>
+<p>对应的HTML代码：<code>&lt;a href=&quot;超链接地址&quot; title=&quot;超链接title&quot;&gt;超链接显示名&lt;/a&gt;</code></p>
+<p>给链接增加 Title</p>
+<p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔，如</p>
+<blockquote>
+<p><code>这是一个链接 [Markdown语法](https://markdown.com.cn &quot;最好的markdown教程&quot;)。</code></p>
+</blockquote>
+<p>渲染效果如下：</p>
+<blockquote>
+<p>这是一个链接 <a target="_blank" rel="noopener" href="https://markdown.com.cn/" title="最好的markdown教程">Markdown语法</a></p>
+</blockquote>
+<p>网址和Email地址</p>
+<p>使用尖括号<code>&lt;&gt;</code>可以很方便地把URL或者email地址变成可点击的链接。</p>
+<blockquote>
+<p><code>&lt;https://github.com/zhubenbuben&gt;</code><br><code>&lt;wangtao20200202@163.com&gt;</code></p>
+</blockquote>
+<p>渲染效果如下：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/zhubenbuben">https://github.com/zhubenbuben</a><br><a href="mailto:&#x77;&#97;&#110;&#103;&#x74;&#x61;&#x6f;&#x32;&#x30;&#50;&#x30;&#48;&#x32;&#48;&#50;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;">&#x77;&#97;&#110;&#103;&#x74;&#x61;&#x6f;&#x32;&#x30;&#50;&#x30;&#48;&#x32;&#48;&#50;&#64;&#x31;&#54;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+</blockquote>
+<p>带格式化的链接</p>
+<p>强调链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。</p>
+<blockquote>
+<p><code>这是github **[账号](https://github.com/zhubenbuben)**</code><br><code>你猜这个是啥 *[链接](https://github.com/zhubenbuben)*</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p>这是github <strong><a target="_blank" rel="noopener" href="https://github.com/zhubenbuben">账号</a></strong><br>你猜这个是啥 <em><a target="_blank" rel="noopener" href="https://github.com/zhubenbuben">链接</a></em></p>
+</blockquote>
+<p>引用类型链接</p>
+<p>引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。</p>
+<p><strong>链接的第一部分格式</strong></p>
+<p>引用类型的链接的第一部分使用两组括号<code>[]</code>进行格式设置。第一组括号包围应显示为链接的文本。第二组括号显示了一个标签，该标签用于指向您存储在文档其他位置的链接。</p>
+<p>尽管不是必需的，可以在第一组和第二组括号之间包含一个空格。第二组括号中的标签不区分大小写，可以包含字母，数字，空格或标点符号。</p>
+<p>以下示例格式对于链接的第一部分效果相同：</p>
+<blockquote>
+<p><code>[myblog][1]</code></p>
+<p><code>[mygithub][2]</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://zhubenbuben.github.io/" title="my blog">myblog</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/zhubenbuben" title="my github">mygithub</a></p>
+</blockquote>
+<p><strong>链接的第二部分格式</strong><br>引用类型链接的第二部分使用以下属性设置格式：</p>
+<p>放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如[label]:）<br>链接的URL，可以选择将其括在尖括号中<br>链接的可选标题，可以将其括在双引号，单引号或括号中<br>以下示例格式对于链接的第二部分效果相同</p>
+<blockquote>
+<p><code>[1]: https://zhubenbuben.github.io &quot;my blog&quot;</code></p>
+<p><code>[2]: https://github.com/zhubenbuben &quot;my github&quot;</code></p>
+</blockquote>
+<h1 id="图片语法"><a href="#图片语法" class="headerlink" title="图片语法"></a>图片语法</h1><p>要添加图像，请使用感叹号 (<code>!</code>), 然后在方括号<code>[]</code>增加替代文本，图片链接放在圆括号<code>()</code>里，括号里的链接后可以增加一个可选的图片标题文本。</p>
+<p>插入图片Markdown语法代码：<code>![图片alt](图片链接 &quot;图片title&quot;)</code></p>
+<blockquote>
+<p><code>![](/blog/source/_posts/markdown语法笔记/2.png &quot;背景图片&quot;)</code></p>
+</blockquote>
+<p>对应的HTML代码：<code>&lt;img src=&quot;图片链接&quot; alt=&quot;图片alt&quot; title=&quot;图片title&quot;&gt;</code></p>
+<blockquote>
+<p><code>&lt;img src=/blog/source/_posts/markdown语法笔记/2.png&gt;</code></p>
+</blockquote>
+<p>渲染效果为：</p>
+<p><img src="/blog/source/images/2.png" alt="背景图片" title="背景图片"></p>
+<img src="/blog/source/images/2.png" alt="背景图片" title="背景图片">
+
+<p><strong>图片链接</strong></p>
+<p>这是个我的blog图片链接<a target="_blank" rel="noopener" href="https://zhubenbuben.github.io/"><img src="/blog/source/images/2.png" alt="背景图片" title="背景图片"></a></p>
+
       
 
       
